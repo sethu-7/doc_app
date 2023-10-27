@@ -1,23 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+// import './App.css';
+import Header from './components/header';
+import DoctorCard from './components/doctor_card';
+import Footer from './components/footer';
+import Doctor from './components/doctor/doctor';
 
 function App() {
   return (
+    
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header />
+      <Doctor />
+      
+      <DoctorCard
+        name="Dr. John Doe"
+        specialty="Cardiologist"
+        availability="Mon, Wed, Fri"
+        imageSrc="doctor1.jpg"
+      />
+      <DoctorCard
+        name="Dr. Jane Smith"
+        specialty="Pediatrician"
+        availability="Tue, Thu"
+        imageSrc="doctor2.jpg"
+      />
+      {/* Add more DoctorCard components as needed */}
+      <Footer />
     </div>
   );
 }
