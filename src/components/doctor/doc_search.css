@@ -39,6 +39,9 @@ html {
     padding: 2rem;
 } */
 
+.image{
+    /* background-image: url("../docpic.jpg"); */
+}
 .ourdoc .docheading {
     margin: 30px;
     color: black;
@@ -241,6 +244,17 @@ html {
     /* flex-direction: column; */
 }
 
+.box{
+
+    background-image: url("https://img.freepik.com/premium-vector/vector-illustration-cardiologist-white-coat-with-heart-his-hands-profession_87693-1659.jpg");
+    height: 150px;
+    margin: auto;
+    padding: 100px;
+    background-size: 75%; /* or background-size: 50%; */
+    background-repeat: no-repeat;
+    
+}
+
 #flex .box {
     /* border: 2px solid indigo; */
     text-align: center;
@@ -282,6 +296,8 @@ html {
 #flex .boxside {
     border: solid white;
     border-width: 10px;
+   
+    
     background-image: url("https://img.freepik.com/premium-vector/abstract-thin-lines-wavy-illustration-free-shape-temlate-curve-style-artwork-seamless-background_121035-618.jpg");
     text-align: center;
     display: block;
@@ -315,7 +331,7 @@ html {
 }
 
 .doc {
-    /* background-image: url("docmed.jpg");  */
+    /* background-image: url("docmed.jpg"); */
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -351,6 +367,7 @@ html {
     margin: auto;
     padding: 20px
 }
+
 
 #flex .boxdoc img {
 
@@ -497,8 +514,11 @@ color: var(--clr-neon);
 .reviews {
     padding: 4rem 0;
     background-color: #f5f5f5;
-    /* background-image: url('https://media.istockphoto.com/id/1222074609/photo/heart-shaped-stethoscope.jpg?s=612x612&w=0&k=20&c=vWBZuvI77BZYOVWLC9vL1yCPrEBpNfR9jJtz7O5bVSE=');
-    background-repeat: space; */
+    background-image: url('https://media.istockphoto.com/id/1222074609/photo/heart-shaped-stethoscope.jpg?s=612x612&w=0&k=20&c=vWBZuvI77BZYOVWLC9vL1yCPrEBpNfR9jJtz7O5bVSE=');
+    background-repeat: space;
+    height: 100px;
+    margin: auto;
+    padding: 20px
 }
 
 .cont {

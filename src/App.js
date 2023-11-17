@@ -2,8 +2,9 @@ import React from 'react';
 // import './App.css';
 import Header from './components/header';
 import DoctorCard from './components/doctor_card';
-import Footer from './components/footer';
+// import Footer from './components/footer';
 import Doctor from './components/doctor/doctor';
+import Footer from './components/footer';
 
 function App() {
   return (
@@ -11,6 +12,8 @@ function App() {
     <div className="App">
       <Header />
       <Doctor />
+
+      
       
       <DoctorCard
         name="Dr. John Doe"

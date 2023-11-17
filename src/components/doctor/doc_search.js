@@ -1,11 +1,13 @@
 import React from "react";
+import './doc_search.css';
 
 function Docsearch() {
     return (
         <>
-            <section>
+            <section class="image">
                 <div class="container">
                     <h1 id="heading">FIND YOUR NEAREST DOCTOR NOW</h1>
+                    
 
                     {/* <form action="doctor_list" style="padding-right: 650px;">
                         <!-- <i class="fas fa-search" aria-hidden="true"></i> -->
