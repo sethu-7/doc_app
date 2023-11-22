@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from 'react-router-dom'
 import './doctor.css'
 import Docsearch from './doc_search'
 
@@ -86,7 +87,9 @@ function Doctor() {
 
                             <body>
                                 {/* <!-- <a href="/dashboard" class="button">Join Us</a> --> */}
-                                <a class="button" href="#" data-toggle="modal" data-target="#signupdocModal">Join Us</a>
+                                <Link to='/doclogin'>
+                                <a class="button" >Join Us</a>
+                                </Link>
                             </body>
 
 
