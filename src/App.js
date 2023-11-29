@@ -5,19 +5,24 @@ import DoctorCard from './components/doctor_card';
 import Doctor from './components/doctor/doctor';
 import Footer from './components/footer';
 import Premium from './components/Premium/premium';
+import Login from './components/doctor/doc_login';
 
 function App() {
   return (
     <Router>
+      
       <div className="App">
         <Header />
 
         <Routes>
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/premium" element={<Premium />} />
+          <Route path="/doc_login" element={<Login />} />
+
+
         </Routes>
 
-        <DoctorCard
+        {/* <DoctorCard
           name="Dr. John Doe"
           specialty="Cardiologist"
           availability="Mon, Wed, Fri"
@@ -28,7 +33,7 @@ function App() {
           specialty="Pediatrician"
           availability="Tue, Thu"
           imageSrc="doctor2.jpg"
-        />
+        /> */}
 
         <Footer />
       </div>

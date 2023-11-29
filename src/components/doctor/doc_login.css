@@ -1,114 +1,52 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+/* doc_login.css */
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-html {
-    font-family: 'Nunito', sans-serif;
-    font-size: 22px;
-    color: #fff;
-}
-
-body {
-    min-height: 100vh;
-    background-color: dodgerblue;
-}
-
-.App {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh; 
-  padding: 1rem 0.5rem;
-}
-
-section {
-    width: 100%;
-    max-width: 420px;
-    min-height: 400px;
+.login {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+  }
+  
+  .login h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .login__form {
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
-    padding: 1rem;
-    background-color: rgba(0,0,0,0.4);
-}
-
-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    flex-grow: 1;
-    padding-bottom: 1rem;
-}
-
-a, a:visited {
-    color: #fff;
-}
-
-input[type="text"],
-input[type="password"],
-button,
-textarea {
-  font-family: 'Nunito', sans-serif;
-  font-size: 22px;
-  padding: 0.25rem;
-  border-radius: 0.5rem;
-}
-
-label,
-button {
-  margin-top: 1rem;
-}
-
-button {
-  padding: 0.5rem;
-}
-
-.instructions {
-    font-size: 0.75rem;
-    border-radius: 0.5rem;
-    background: #000;
-    color: #fff;
-    padding: 0.25rem;
-    position: relative;
-    bottom: -10px;
-}
-
-.instructions > svg {
-    margin-right: 0.25rem;
-}
-
-.offscreen {
-    position: absolute;
-    left: -9999px;
-}
-
-.hide {
-    display: none;
-}
-
-.valid {
-    color: limegreen;
-    margin-left: 0.25rem;
-}
-
-.invalid {
-    color: red;
-    margin-left: 0.25rem;
-}
-
-.errmsg {
-    background-color: lightpink;
-    color: firebrick;
+  }
+  
+  .login__form div {
+    margin-bottom: 15px;
+  }
+  
+  label {
     font-weight: bold;
-    padding: 0.5rem;
-    margin-bottom: 0.5rem;
-}
-
-.line {
-    display: inline-block;
-}
+    margin-bottom: 5px;
+    display: block;
+  }
+  
+  input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+  
+  button {
+    background-color: rgb(0, 0, 56);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
