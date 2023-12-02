@@ -28,6 +28,7 @@ function Header() {
                             <li><a href="fsd">First Aid/Emergency</a></li>
                             <li><Link to="/premium">Premium</Link></li>
                             <li><a href="offers">Offers</a></li>
+                            <li><Link to="/doc_login">Login</Link></li>
 
 
                         </ul>

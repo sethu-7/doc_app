@@ -6,21 +6,34 @@ import Doctor from './components/doctor/doctor';
 import Footer from './components/footer';
 import Premium from './components/Premium/premium';
 import Login from './components/doctor/doc_login';
+import Signin from './components/doctor/doc_signin';
+import Profile from './components/doctor/doc_profile'
+import { Provider } from 'react-redux';
+import store from './app/store';
+// import { useSelector } from 'react-redux';
+import { selectUser } from './features/userSlice';
 
 function App() {
+  // const user=useSelector(selectUser);
   return (
     <Router>
       
       <div className="App">
         <Header />
+        <Provider store={store}>
+
 
         <Routes>
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/premium" element={<Premium />} />
           <Route path="/doc_login" element={<Login />} />
+          <Route path="/doc_signin" element={<Signin/>}/>
+          <Route path="/doc_profile" element={<Profile />} />
+          {/* <Route path="/doc_profile" element={<profile />} /> */}
 
 
         </Routes>
+        </Provider>
 
         {/* <DoctorCard
           name="Dr. John Doe"

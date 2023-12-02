@@ -87,7 +87,7 @@ function Doctor() {
 
                             <body>
                                 {/* <!-- <a href="/dashboard" class="button">Join Us</a> --> */}
-                                <Link to='/doc_login'>
+                                <Link to='/doc_signin'>
                                 <a class="button" >Join Us</a>
                                 </Link>
                             </body>
