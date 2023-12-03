@@ -586,3 +586,32 @@ color: var(--clr-neon);
     transform: translateY(-0.5rem); /* Lift the box on hover */
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }
+
+.shareshare {
+    display: flex;
+    gap: 1rem; /* Adjust the gap value to control the distance between icons */
+  }
+  
+  .shareshare a {
+    height: 5rem;
+    width: 5rem;
+    line-height: 5rem; /* Adjusted to match height for vertical centering */
+    font-size: 1.5rem;
+    color: black;
+    border-radius: 0.5rem;
+    border: var(--border);
+    text-align: center; /* Center the icon horizontally */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 0.3s ease;
+    padding: 10px;
+  }
+  
+  .shareshare a:hover {
+    background-color: black; /* Change the background color on hover to black */
+    color: white; /* Change the text (symbol) color on hover to white */
+    padding: 1px;
+  }
+  
+  

@@ -24,13 +24,13 @@ html {
     text-decoration: none;
 }
 
-/* .ourdoc .ourboxcontainer{
+/* .ourdoc .ourboxcontainer-image{
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
     gap: 2rem;
 }
 
-.ourdoc .ourboxcontainer.ourbox{
+.ourdoc .ourboxcontainer-image.ourbox{
     text-align: center;
     background-color: #FCF8E8;
     border-radius: 5rem;
@@ -39,9 +39,27 @@ html {
     padding: 2rem;
 } */
 
-.image{
-    /* background-image: url("../docpic.jpg"); */
-}
+/* styles.css */
+
+.container-image {
+    background-image: url("../../../public/images/docpic.jpg");
+    background-size: cover; /* This will cover the entire container */
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Prevent image repetition */
+    transition: background-size 0.3s ease; /* Add a transition for a smooth effect */
+  
+    /* Additional styles for the container, adjust as needed */
+    width: 100%;
+    height: 300px; /* Set the height of your container */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    text-align: center;
+  }
+  
+  
+  
 .ourdoc .docheading {
     margin: 30px;
     color: black;
@@ -49,7 +67,7 @@ html {
 
 }
 
-.ourdoc .ourboxcontainer {
+.ourdoc .ourboxcontainer-image {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
@@ -61,7 +79,7 @@ html {
     /* set max-width */
 }
 
-.ourdoc .ourboxcontainer .ourbox {
+.ourdoc .ourboxcontainer-image .ourbox {
     text-align: center;
     background-color: white;
 
@@ -76,29 +94,29 @@ html {
 }
 
 
-.ourdoc .ourboxcontainer .ourbox img {
+.ourdoc .ourboxcontainer-image .ourbox img {
     height: 20rem;
     border: var(--border);
     border-radius: .5rem;
     margin-top: 1rem;
 }
 
-.ourdoc .ourboxcontainer .ourbox h3 {
+.ourdoc .ourboxcontainer-image .ourbox h3 {
     color: black;
     font-size: 2.5rem;
 }
 
-.ourdoc .ourboxcontainer .ourbox span {
+.ourdoc .ourboxcontainer-image .ourbox span {
     color: gray;
     font-size: 1.5rem;
 }
 
-.ourdoc .ourboxcontainer .ourbox .share {
+.ourdoc .ourboxcontainer-image .ourbox .share {
     padding-top: 2rem;
 
 }
 
-.ourdoc .ourboxcontainer .ourbox .share a {
+.ourdoc .ourboxcontainer-image .ourbox .share a {
     height: 5rem;
     width: 5rem;
     line-height: 4.5rem;
@@ -106,11 +124,11 @@ html {
     color: black;
     border-radius: .5rem;
     border: var(--border);
-    margin: 3rem;
+    margin: 3rem 3rem;
 
 }
 
-.ourdoc .ourboxcontainer .ourbox .share a:hover {
+.ourdoc .ourboxcontainer-image .ourbox .share a:hover {
     background: black;
     /* color: #ddf7ff; */
     box-shadow: var(--box-shadow);
@@ -123,7 +141,7 @@ html {
 
 
 
-.container {
+.container-image {
     display: flex;
 
     flex-direction: column;
@@ -133,7 +151,7 @@ html {
     height: 400px;
 }
 
-.container::before {
+.container-image::before {
     content: '';
     /* background-image: url("docpic.jpg"); */
     position: absolute;

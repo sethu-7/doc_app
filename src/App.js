@@ -1,4 +1,5 @@
 import React from 'react';
+import { useState,useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Header from './components/header';
 import DoctorCard from './components/doctor_card';
@@ -7,13 +8,29 @@ import Footer from './components/footer';
 import Premium from './components/Premium/premium';
 import Login from './components/doctor/doc_login';
 import SignUp from './components/doctor/doc_signin';
-import Profile from './components/doctor/doc_profile'
+import Profile from './components/doctor/doc_profile';
+import Medicines from './components/shop/Medicines';
+import Cart from './components/shop/Cart';
+import Homee from './components/shop/Homee'
+import OopsPage from './components/oopspage';
+
 import { Provider } from 'react-redux';
 import store from './app/store';
 // import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 
+
+
 function App() {
+
+  const [cart, setCart] = useState([]);
+  useEffect(() => {
+    const savedCart = localStorage.getItem('cart');
+    if (savedCart) {
+      setCart(JSON.parse(savedCart));
+    }
+  }, []);
+
   // const user=useSelector(selectUser);
   return (
     <Router>
@@ -29,6 +46,14 @@ function App() {
           <Route path="/doc_login" element={<Login />} />
           <Route path="/doc_signin" element={<SignUp/>}/>
           <Route path="/doc_profile" element={<Profile />} />
+          <Route path="/oops" element={<OopsPage />} />
+          <Route path="/MedHome" element={<Homee />} />
+          <Route path="/Medicines" element={<Medicines cart={cart} setCart={setCart} />} />
+          <Route
+            path="/cart"
+            element={<Cart cart={cart} setCart={setCart} />}  // Pass setCart to Cart
+          />
+
           {/* <Route path="/doc_profile" element={<profile />} /> */}
 
 

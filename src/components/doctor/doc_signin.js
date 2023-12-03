@@ -27,7 +27,7 @@ const SignUp = () => {
     );
 
     if (!isValidPassword) {
-      setPasswordError(
+      alert(
         'Password should contain at least 6 characters, including a number, a capital letter, a small letter, and a special character.'
       );
       return;
@@ -40,7 +40,7 @@ const SignUp = () => {
     const isValidEmail = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
     if (!isValidEmail) {
-      setEmailError('Please enter a valid email address.');
+      alert('Please enter a valid email address.');
       return;
     }
 

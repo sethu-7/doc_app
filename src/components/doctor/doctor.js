@@ -48,7 +48,7 @@ function Doctor() {
                             <li hidden>key={index}</li>
                             <h3>{list.name}</h3>
                             <span>Location: {list.address.street}</span>
-                            <div className="share">
+                            <div className="shareshare">
                                 <a href="#">
                                     <FontAwesomeIcon icon={faFacebook} />
                                 </a>

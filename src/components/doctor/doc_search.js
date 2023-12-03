@@ -5,12 +5,12 @@ function Docsearch() {
     return (
         <>
             <section class="image">
-                <div class="container">
+                <div class="container-image">
                     <h1 id="heading">FIND YOUR NEAREST DOCTOR NOW</h1>
                     
 
                     {/* <form action="doctor_list" style="padding-right: 650px ;"> */}
-                        <i class="fas fa-search" aria-hidden="true"></i> 
+                        {/* <i class="fas fa-search" aria-hidden="true"></i>  */}
                         <input class="search" type="text" id="Spec" name="Spec"
                             placeholder="Search for specializations or district"/>
                     {/* </form> */}
