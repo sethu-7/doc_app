@@ -1,9 +1,9 @@
-/* :root {
+:root {
     --blue: #4b0082;
     --box-shadow: .5rem .5rem 0 rgb(22, 160, 133, .2) --text-shadow:.4rem .4rem 0 rgba(0, 0, 0, .2) --border:.2rem solid #4b0082;
 
 
-} */
+}
 
 html {
     overflow-x: hidden;
@@ -24,20 +24,26 @@ html {
     text-decoration: none;
 }
 
-/* .ourdoc .ourboxcontainer{
+.ourdoc .ourboxcontainer {
     display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(27rem,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50%, 1fr)); /* Two columns */
     gap: 2rem;
 }
 
-.ourdoc .ourboxcontainer.ourbox{
+.ourdoc .ourboxcontainer .ourbox {
     text-align: center;
-    background-color: #FCF8E8;
+    background-color: white;
     border-radius: 5rem;
     border: var(--border);
-    box-shadow: var(--box-shadow);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
     padding: 2rem;
-} */
+    border: 2px solid black;
+    margin: 1rem;
+    max-width: 400px; /* Optionally limit the max width of each box */
+    width: 100%; /* Ensure the box takes full width */
+}
+
 
 .ourdoc .docheading {
     margin: 30px;
@@ -57,7 +63,7 @@ html {
     max-width: 120rem;
     /* set max-width */
 }
-
+/* 
 .ourdoc .ourboxcontainer .ourbox {
     text-align: center;
     background-color: white;
@@ -67,10 +73,10 @@ html {
     box-shadow: var(--box-shadow);
     padding: 2rem;
     border: 2px solid black;
-    /* add border */
+    
     margin: 1rem;
-    /* add margin */
-}
+    
+} */
 
 
 .ourdoc .ourboxcontainer .ourbox img {
@@ -91,29 +97,27 @@ html {
 }
 
 .ourdoc .ourboxcontainer .ourbox .share {
-    padding-top: 2rem;
-
+    padding-top: 1rem;
+    display: flex    ;
+    justify-content: center; /* Align icons in the center */
 }
 
 .ourdoc .ourboxcontainer .ourbox .share a {
-    height: 5rem;
-    width: 5rem;
-    line-height: 4.5rem;
-    font-size: 2rem;
+    height: 2.5rem;
+    width: 2.5rem;
+    line-height: 2rem;
+    font-size: 1rem;
     color: black;
-    border-radius: .5rem;
+    border-radius: .4rem;
     border: var(--border);
-    margin: 3rem;
-
+    margin: -1rem; /* Adjust the margin to make them closer together */
 }
 
 .ourdoc .ourboxcontainer .ourbox .share a:hover {
-    background: black;
-    /* color: #ddf7ff; */
+    background: white;
+    color: white;
     box-shadow: var(--box-shadow);
-
 }
-
 
 
 .footer li a:hover {
@@ -179,44 +183,6 @@ html {
 
 
 
-.footer li a {
-
-
-    border-radius: 20px;
-
-}
-
-.footer {
-    background-color: black;
-    color: aliceblue;
-
-    align-items: center;
-
-
-    color: #FCF8E8;
-    display: flex;
-    justify-content: space-around;
-
-    width: 100%;
-    ;
-    flex-wrap: wrap;
-    flex-grow: inherit;
-
-}
-
-.footer li a {
-    color: grey;
-}
-
-.footer h4 {
-    color: white;
-}
-
-.footer div {
-    margin: 10px;
-    padding: 20px;
-
-}
 
 .consult {
     margin: 40px;
@@ -577,18 +543,46 @@ color: var(--clr-neon);
 
 }
 
-#logo {
-    /* padding: 10px; */
-    width: 135px;
-    float: right;
 
 
+.ourdoc .docheading {
+    margin: 30px;
+    color: black;
+    text-align: center;
+    font-size: 2.5rem; /* Increase font size for the heading "Our doctors" */
 }
 
-.navbar ul li a {
+.ourdoc .ourboxcontainer .ourbox h3 {
+    color: black;
+    font-size: 1.8rem; /* Decrease font size for the headings in the boxes */
+}
 
-    display: block;
-    /* padding: 3px 22px; */
-    border-radius: 20px;
+.doctor h1 {
+    font-family: 'Secular One', sans-serif;
+    font-family: 'Yeseva One', cursive;
+    font-size: 2.5rem; /* Increase font size for the heading "ARE YOU A DOCTOR?" */
+}
 
+.ourdoc .ourboxcontainer .ourbox {
+    text-align: center;
+    background-color: white;
+    border-radius: 5rem;
+    border: var(--border);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    /* transform: translateY(-0.5rem);  */
+    /* Add shadow effect */
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition effect */
+
+    padding: 2rem;
+    border: 2px solid black;
+    margin: 1rem;
+}
+
+/* No hover effect needed in this case */
+
+
+/* Add hover effect for the lifted box */
+.ourdoc .ourboxcontainer .ourbox:hover {
+    transform: translateY(-0.5rem); /* Lift the box on hover */
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); /* Enhance shadow on hover */
 }

@@ -6,7 +6,7 @@ import Doctor from './components/doctor/doctor';
 import Footer from './components/footer';
 import Premium from './components/Premium/premium';
 import Login from './components/doctor/doc_login';
-import Signin from './components/doctor/doc_signin';
+import SignUp from './components/doctor/doc_signin';
 import Profile from './components/doctor/doc_profile'
 import { Provider } from 'react-redux';
 import store from './app/store';
@@ -27,7 +27,7 @@ function App() {
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/premium" element={<Premium />} />
           <Route path="/doc_login" element={<Login />} />
-          <Route path="/doc_signin" element={<Signin/>}/>
+          <Route path="/doc_signin" element={<SignUp/>}/>
           <Route path="/doc_profile" element={<Profile />} />
           {/* <Route path="/doc_profile" element={<profile />} /> */}
 

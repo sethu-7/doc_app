@@ -9,11 +9,11 @@ function Docsearch() {
                     <h1 id="heading">FIND YOUR NEAREST DOCTOR NOW</h1>
                     
 
-                    {/* <form action="doctor_list" style="padding-right: 650px;">
-                        <!-- <i class="fas fa-search" aria-hidden="true"></i> -->
+                    {/* <form action="doctor_list" style="padding-right: 650px ;"> */}
+                        <i class="fas fa-search" aria-hidden="true"></i> 
                         <input class="search" type="text" id="Spec" name="Spec"
-                            placeholder="Search for specializations or dictrict">
-                    </form> */}
+                            placeholder="Search for specializations or district"/>
+                    {/* </form> */}
 
 
 

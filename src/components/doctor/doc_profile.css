@@ -27,7 +27,7 @@ body {
 
 .profile-user-page .img-user-profile .avatar {
     position: absolute;
-    top: calc(50% + 30px);
+    top: calc(50% + 0px);
     left: 50%;
     transform: translate(-50%, -50%);
     background: #fff;
