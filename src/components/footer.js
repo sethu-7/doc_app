@@ -16,7 +16,7 @@ function Footer() {
                     <li><a href="contact">Contact</a></li>
                     {/* <li><a href="">Business</a></li>
                     <li><a href="partnership">Partnership</a></li> */}
-                    <li><a href="admin_password_validation">Admin</a></li>
+                    <li><Link to="/AdminLogin">Admin</Link></li>
                     <li><Link to="/doc_login">Doctor Login</Link></li>
 
                 </div>

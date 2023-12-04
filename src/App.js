@@ -5,7 +5,16 @@ import Header from './components/header';
 import DoctorCard from './components/doctor_card';
 import Doctor from './components/doctor/doctor';
 import Footer from './components/footer';
-// import Premium from './components/Premium/premium';
+
+import Premium from './components/Premium/premium';
+import AdminPage from './components/Admin/AdminPage'
+import AdminLoginPage from './components/Admin/Admin_login';
+import RootLayout from './components/Premium/RootLayout'
+import Offers from './components/offers/Offers'
+import PaymentDashboard from './components/Premium/PaymentDashboard'
+
+import Signup_user from './components/Home/Signup_user';
+ 
 import Login from './components/doctor/doc_login';
 import SignUp from './components/doctor/doc_signin';
 import Profile from './components/doctor/doc_profile';
@@ -45,9 +54,14 @@ function App() {
 
         <Routes>
           <Route path="/doctor" element={<Doctor />} />
-          {/* <Route path="/premium" element={<Premium />} /> */}
+          <Route path="/premium" element={<Premium />} />
+          <Route path="/Admin" element={<AdminPage />} />
+          <Route path="/AdminLogin" element={<AdminLoginPage />} />
+          <Route path="/offers" element={<Offers />} />
+          <Route path="/PaymentDashboard" element={<PaymentDashboard />} />
           <Route path="/doc_login" element={<Login />} />
           <Route path="/doc_signin" element={<SignUp/>}/>
+          <Route path="/SignUpUser" element={<Signup_user/>}/>
           <Route path="/doc_profile" element={<Profile />} />
           <Route path="/privacy" element={<PrivacyPolicy />} />
           <Route path="/greivance" element={<GrievancesAndRedressal />} />
