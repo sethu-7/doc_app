@@ -47,6 +47,13 @@ const SignUp = () => {
     // Clear email error if valid
     setEmailError('');
 
+    const isValidDoctorId = /^\d{12}$/.test(doctorId);
+
+  if (!isValidDoctorId) {
+    alert('Doctor ID should contain exactly 12 digits.');
+    return;
+  }
+
     // Dispatch signUp action with user details
     dispatch(signUp(username));
     dispatch(setUserName(username));

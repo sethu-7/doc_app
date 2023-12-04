@@ -14,21 +14,23 @@ function Footer() {
                     <h4>Know us</h4>
                     <li><a href="aboutus">About</a></li>
                     <li><a href="contact">Contact</a></li>
-                    <li><a href="">Business</a></li>
-                    <li><a href="partnership">Partnership</a></li>
+                    {/* <li><a href="">Business</a></li>
+                    <li><a href="partnership">Partnership</a></li> */}
                     <li><a href="admin_password_validation">Admin</a></li>
                     <li><Link to="/doc_login">Doctor Login</Link></li>
 
                 </div>
                 <div>
                     <h4>Our Policies</h4>
-                    <li><a href="privacy">Privacy Policy</a></li>
-                    <li><a href="grievance">Grievance Redressal</a></li>
-                    <li><a href="fraud">Fake jobs and Frauds</a></li>
+                    <li><Link to="/privacy">Privacy Policy</Link></li>
+                    <li><Link to="/greivance">Grievances And Redressal</Link></li>
+                    <li><Link to="/fakejob">Fake Jobs and Frauds</Link></li>
+                    
                 </div>
                 <div>
                     <h4>Our Services</h4>
-                    <li><a href="medicines">Order Medicines</a></li>
+                    {/* <li><a href="medicines">Order Medicines</a></li> */}
+                    <li><Link to="/Medicines">Order Medicines</Link></li>
                     <li><Link to="/doctor">Consut a Doctor</Link></li>
                     <li><a href="">Articles</a></li>
                 </div>

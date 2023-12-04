@@ -41,6 +41,10 @@ const Profile = () => {
         </div>
         {/* <%})%> */}
     </div>
+    <br>
+    </br>
+    <br>
+    </br>
 
     <div class="patients">
             <h1>TODAY'S VISITS

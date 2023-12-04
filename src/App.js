@@ -13,6 +13,9 @@ import Medicines from './components/shop/Medicines';
 import Cart from './components/shop/Cart';
 import Homee from './components/shop/Homee'
 import OopsPage from './components/oopspage';
+import GrievancesAndRedressal from './components/OurPolicies/Greivance';
+import FakeJobAndFrauds from './components/OurPolicies/Fakejob';
+import PrivacyPolicy from './components/OurPolicies/privacy';
 
 import { Provider } from 'react-redux';
 import store from './app/store';
@@ -46,6 +49,9 @@ function App() {
           <Route path="/doc_login" element={<Login />} />
           <Route path="/doc_signin" element={<SignUp/>}/>
           <Route path="/doc_profile" element={<Profile />} />
+          <Route path="/privacy" element={<PrivacyPolicy />} />
+          <Route path="/greivance" element={<GrievancesAndRedressal />} />
+          <Route path="/fakejob" element={<FakeJobAndFrauds />} />
           <Route path="/oops" element={<OopsPage />} />
           <Route path="/MedHome" element={<Homee />} />
           <Route path="/Medicines" element={<Medicines cart={cart} setCart={setCart} />} />
