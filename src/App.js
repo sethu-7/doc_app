@@ -5,7 +5,7 @@ import Header from './components/header';
 import DoctorCard from './components/doctor_card';
 import Doctor from './components/doctor/doctor';
 import Footer from './components/footer';
-import Premium from './components/Premium/premium';
+// import Premium from './components/Premium/premium';
 import Login from './components/doctor/doc_login';
 import SignUp from './components/doctor/doc_signin';
 import Profile from './components/doctor/doc_profile';
@@ -45,7 +45,7 @@ function App() {
 
         <Routes>
           <Route path="/doctor" element={<Doctor />} />
-          <Route path="/premium" element={<Premium />} />
+          {/* <Route path="/premium" element={<Premium />} /> */}
           <Route path="/doc_login" element={<Login />} />
           <Route path="/doc_signin" element={<SignUp/>}/>
           <Route path="/doc_profile" element={<Profile />} />
