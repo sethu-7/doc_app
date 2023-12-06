@@ -9,7 +9,7 @@ import Footer from './components/footer';
 import Premium from './components/Premium/premium';
 import AdminPage from './components/Admin/AdminPage'
 import AdminLoginPage from './components/Admin/Admin_login';
-import RootLayout from './components/Premium/RootLayout'
+
 import Offers from './components/offers/Offers'
 import PaymentDashboard from './components/Premium/PaymentDashboard'
 

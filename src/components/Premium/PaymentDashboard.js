@@ -1,7 +1,8 @@
+
 // PaymentDashboard.js
 
 import React from 'react';
-import './PaymentDashboard.css';
+import styles from './PaymentDashboard.module.css'; // Import the CSS module
 
 const PaymentDashboard = () => {
   const validateForm = () => {
@@ -28,12 +29,11 @@ const PaymentDashboard = () => {
 
     return true;
   };
-
   return (
-    <div className="container">
-      <h1 className="maint"></h1>
-      <div className="section animated bounceInLeft">
-        <div className="contact">
+    <div className={styles.container}>
+      <h1 className={styles.maint}></h1>
+      <div className={`${styles.section} animated bounceInLeft`}>
+        <div className={styles.contact}>
           <h3>Payment Dashboard</h3>
           <form action="http://localhost:3000/" method="POST" onSubmit={validateForm}>
             <p>
@@ -57,7 +57,7 @@ const PaymentDashboard = () => {
               <option value="3499">₹3499</option>
               <option value="9999">₹9999</option>
             </select>
-            <p className="full">
+            <p className={styles.full}>
               <button type="submit">Click here to pay</button>
             </p>
           </form>
