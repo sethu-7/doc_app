@@ -72,11 +72,14 @@ const Medicines = ({ cart, setCart }) => {
     setCart(updatedCart);
     alert("Successfully added to the cart!");
   };
- 
+  const goToCart = () => {
+    navigate('/Cart'); // Assuming your cart route is '/cart'. Adjust as needed.
+  };
   return (
     <>
       
       <div className="medicines-container">
+      <div className="search-and-cart">
         <input
           type="text"
           placeholder="Search medicines by name"
@@ -84,7 +87,8 @@ const Medicines = ({ cart, setCart }) => {
           onChange={handleSearch}
           className="search-input"
         />
-
+         <button onClick={goToCart}>Go to Cart</button>
+</div>
         <div className="medicines-list">
           {medicines.map((medicine) => (
             <div key={medicine.id} className="medicine-card">

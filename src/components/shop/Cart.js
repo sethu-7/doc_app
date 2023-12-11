@@ -31,7 +31,7 @@ const Cart = ({ cart,setCart }) => {
                 <p>Cost: {item.cost.toFixed(2)}</p>
                 {/* <p>Quantity: {item.quantity}</p> */}
                 {/* <p>Total: {(item.cost ).toFixed(2)}</p> */}
-                <button onClick={() => removeFromCart(item.id)}>Remove from Cart</button>
+                <button onClick={() => removeFromCart(item.id)}>Remove</button>
               </div>
             </div>
           ))}
