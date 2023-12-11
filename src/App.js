@@ -26,6 +26,9 @@ import GrievancesAndRedressal from './components/OurPolicies/Greivance';
 import FakeJobAndFrauds from './components/OurPolicies/Fakejob';
 import PrivacyPolicy from './components/OurPolicies/privacy';
 
+import AboutUs from './components/AboutUs/aboutus';
+import ContactUs from './components/ContactUs/ContactUs';
+
 import { Provider } from 'react-redux';
 import store from './app/store';
 // import { useSelector } from 'react-redux';
@@ -55,6 +58,8 @@ function App() {
         <Routes>
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/premium" element={<Premium />} />
+          <Route path="/aboutus" element={<AboutUs />} />
+          <Route path="/contactus" element={<ContactUs />} />
           <Route path="/Admin" element={<AdminPage />} />
           <Route path="/AdminLogin" element={<AdminLoginPage />} />
           <Route path="/offers" element={<Offers />} />
