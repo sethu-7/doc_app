@@ -33,6 +33,7 @@ import User from './components/Home/user';
 
 // >>>>>>> ae59b75aeee9a711db19f19ff4c4a31412ba5d1f
 import Login from './components/doctor/doc_login';
+import Patient from './components/Home/patient_login';
 import SignUp from './components/doctor/doc_signin';
 import Profile from './components/doctor/doc_profile';
 import Medicines from './components/shop/Medicines';
@@ -76,6 +77,7 @@ function App() {
         <Routes>
           <Route path="/" element={<User />}/>
           <Route path="/user" element={<User />}/>
+          <Route path="/patient" element={<Patient />}/>
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/doctor_list" element={<Doctors_List />} />
           <Route path="/premium" element={<Premium />} />
