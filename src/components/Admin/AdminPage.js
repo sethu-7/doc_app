@@ -16,23 +16,28 @@ const AdminPage = () => {
   const [medicineAddition, setMedicineAddition] = useState(false);
 
   const offerdeletionHandler = () => {
-    setOfferDeletion(true);
+    // setOfferDeletion(true);
+    alert('backend is not conected')
   };
 
   const medicinedeletionHandler = () => {
-    setMedicineDeletion(true);
+    // setMedicineDeletion(true);
+    alert('backend is not conected')
   };
 
   const doctorRemovigHandler = () => {
-    setRemoveDoctor(true);
+    // setRemoveDoctor(true);
+    alert('backend is not conected')
   };
 
   const offerAdditionHandler = () => {
-    setOfferAddition(true);
+    // setOfferAddition(true);
+    alert('backend is not conected')
   };
 
   const medicineAdditionHandler = () => {
-    setMedicineAddition(true);
+    // setMedicineAddition(true);
+    alert('backend is not conected')
   };
 
   return (
