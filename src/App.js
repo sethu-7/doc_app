@@ -14,7 +14,11 @@ import Offers from './components/offers/Offers'
 import PaymentDashboard from './components/Premium/PaymentDashboard'
 
 import Signup_user from './components/Home/Signup_user';
+<<<<<<< HEAD
 import Doctors_List from './components/doctor/doc_list';
+=======
+import User from './components/Home/user';
+>>>>>>> 54e23b448467368185605b690849d83d9c382d0e
  
 import Login from './components/doctor/doc_login';
 import SignUp from './components/doctor/doc_signin';
@@ -57,6 +61,8 @@ function App() {
 
 
         <Routes>
+          <Route path="/" element={<User />}/>
+          <Route path="/user" element={<User />}/>
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/doctor_list" element={<Doctors_List />} />
           <Route path="/premium" element={<Premium />} />

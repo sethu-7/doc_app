@@ -8,7 +8,7 @@ const OfferCard = ({ imageSrc, altText, title, description }) => {
       <div className="card-content">
         <h3>{title}</h3>
         <p style={{ fontSize: 'larger', fontWeight: 'bold' }}>{description}<br /></p>
-        <a href="#" className="buy-now-btn">Buy now</a>
+        {/* <a href="#" className="buy-now-btn">Buy now</a> */}
       </div>
     </div>
   );
