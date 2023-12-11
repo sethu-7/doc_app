@@ -10,6 +10,7 @@ const SignUp = () => {
   const dispatch = useDispatch();
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
+  const [address, setAddress] = useState('');
   const [specialization, setSpecialization] = useState('');
   const [doctorId, setDoctorId] = useState('');
   // const [firstName, setFirstName] = useState('');
@@ -91,6 +92,14 @@ const SignUp = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
         {passwordError && <p className="error-message">{passwordError}</p>}
+        <br />
+        <label className="signup-label">Address:</label>
+        <input
+          type="text"
+          className="signup-input"
+          value={address}
+          onChange={(e) => setAddress(e.target.value)}
+        />
         <br />
         <label className="signup-label">Specialization:</label>
         <input

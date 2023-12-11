@@ -609,7 +609,7 @@ color: var(--clr-neon);
   }
   
   .shareshare a:hover {
-    background-color: black; /* Change the background color on hover to black */
+    background-color: rgb(82, 82, 82); /* Change the background color on hover to black */
     color: white; /* Change the text (symbol) color on hover to white */
     padding: 1px;
   }
