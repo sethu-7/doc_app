@@ -46,7 +46,7 @@ const Signup_user = () => {
     setEmailError('');
 
     // Redirect to /doc_profile using useNavigate
-    navigate('/Home');
+    navigate('/user');
   };
 
   return (

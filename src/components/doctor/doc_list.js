@@ -79,7 +79,7 @@ const Doctors_List = ({ cart, setCart }) => {
       <div className="medicines-container">
         <input
           type="text"
-          placeholder="Search medicines by name"
+          placeholder="Search Doctors"
           value={searchTerm}
           onChange={handleSearch}
           className="search-input"
