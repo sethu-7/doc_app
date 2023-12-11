@@ -3,8 +3,10 @@
 
 import React from 'react';
 import styles from './PaymentDashboard.module.css'; // Import the CSS module
+import { useNavigate } from 'react-router-dom';
 
 const PaymentDashboard = () => {
+  const navigate=useNavigate();
   const validateForm = () => {
     var name = document.getElementById("name").value;
     var email = document.getElementById("email").value;
@@ -26,6 +28,7 @@ const PaymentDashboard = () => {
       alert("Please enter a valid 3 digit CVV number.");
       return false;
     }
+    navigate('/Home');
 
     return true;
   };
@@ -35,7 +38,7 @@ const PaymentDashboard = () => {
       <div className={`${styles.section} animated bounceInLeft`}>
         <div className={styles.contact}>
           <h3>Payment Dashboard</h3>
-          <form action="http://localhost:3000/" method="POST" onSubmit={validateForm}>
+          <form action="http://localhost:3000/"  onSubmit={validateForm}>
             <p>
               <label htmlFor="name">Name</label>
               <input type="text" name="name" id="name" required />

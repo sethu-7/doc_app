@@ -1,7 +1,7 @@
 // ContactUs.js
 
 import React from 'react';
-import './AboutUs'
+import './ContactUs.css'
 
 const ContactUs = () => {
   return (
