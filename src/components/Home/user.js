@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import './user.css';
-
+import { Link } from 'react-router-dom';
+import Patient from './patient_login';
 
 const User = () => {
   // useEffect(() => {
@@ -29,11 +30,16 @@ const User = () => {
 
   return (<>
   <main>
+  
   <div class="intro">
+  
     <h1>Opiherbs</h1>
     <p>We take care of Patients like our own. Feel Homely even in Hospital.</p>
+    <Link to="/patient">
     <button>Welcome to our Family!</button>
+    </Link>
   </div>
+  
 
   <div class="about-me">
     <div class="about-me-text">
