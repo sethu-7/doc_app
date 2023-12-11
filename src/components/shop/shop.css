@@ -217,3 +217,41 @@
   color: rgb(248, 248, 248);
   border-color: white;
 }
+/* Add this to your CSS file or component stylesheet */
+
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 15px;
+  z-index: 1000; /* Ensure it's above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification p {
+  margin: 0;
+}
+
+/* Add transition for a smooth appearance and disappearance effect */
+.notification-enter {
+  opacity: 0;
+}
+
+.notification-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.notification-exit {
+  opacity: 1;
+}
+
+.notification-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+

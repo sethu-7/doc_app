@@ -1,7 +1,7 @@
 // Cart.js
 
-import React, { useEffect ,useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect } from 'react';
+
 const Cart = ({ cart,setCart }) => {
     const calculateTotal = () => {
         return cart.reduce((total, item) => total + item.cost , 0);
