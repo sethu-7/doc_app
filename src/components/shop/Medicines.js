@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Link,useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 const Medicines = ({ cart, setCart }) => {
-  // Sample data (replace this with your actual data)
+  
   const initialMedicines = [
     {
       id: 1,
@@ -61,7 +61,7 @@ const Medicines = ({ cart, setCart }) => {
     setMedicines(filteredMedicines);
   };
   const navigate = useNavigate();
-
+  const [notification, setNotification] = useState('');
   const addToCart = (medicine) => {
     const updatedMedicines = medicines.map((med) =>
       med.id === medicine.id ? { ...med, added: 'yes' } : med
@@ -70,13 +70,24 @@ const Medicines = ({ cart, setCart }) => {
 
     const updatedCart = [...cart, { ...medicine, quantity: 1 }];
     setCart(updatedCart);
-    alert("Successfully added to the cart!");
+    setNotification(`${medicine.name} has been added to the cart!`);
+    setTimeout(() => {
+      setNotification('');
+    }, 3000);
   };
- 
+  const goToCart = () => {
+    navigate('/Cart'); 
+  };
   return (
     <>
       
+      {notification && (
+        <div className="notification">
+          <p>{notification}</p>
+        </div>
+      )}
       <div className="medicines-container">
+      <div className="search-and-cart">
         <input
           type="text"
           placeholder="Search medicines by name"
@@ -84,7 +95,8 @@ const Medicines = ({ cart, setCart }) => {
           onChange={handleSearch}
           className="search-input"
         />
-
+         <button onClick={goToCart}>Go to Cart</button>
+</div>
         <div className="medicines-list">
           {medicines.map((medicine) => (
             <div key={medicine.id} className="medicine-card">
@@ -98,6 +110,8 @@ const Medicines = ({ cart, setCart }) => {
           ))}
         </div>
       </div>
+      
+    
     </>
   );
 };
