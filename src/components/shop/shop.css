@@ -43,7 +43,7 @@
 
 .home button {
   font-size: 20px;
-  background-color: #d23366;
+  background-color: #006e9e;
   color: white;
   border: 2px solid white;
   border-radius: 20px;
@@ -54,7 +54,7 @@
 }
 
 .home button:hover {
-  background-color: #006e9e;
+  background-color: #ac1c6b;
   color: white;
 }
 
@@ -83,7 +83,22 @@
   align-items: center;
   padding: 20px;
 }
+.medicines-container button{
 
+  font-size: 15px;
+  background-color: #006e9e;
+  color: white;
+  border: 2px solid white;
+  border-radius: 20px;
+  width: 100px;
+  height: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.medicines-container button:hover{
+  background-color: #d44694;
+  color: white;
+}
 .search-input {
   margin-bottom: 20px;
   padding: 10px;
@@ -128,7 +143,7 @@
 
 .medicines-list button {
   font-size: 20px;
-  background-color: #d23366;
+  background-color: #006e9e;
   color: white;
   border: 2px solid white;
   border-radius: 20px;
@@ -139,7 +154,7 @@
 }
 
 .medicines-list button:hover {
-  background-color: #006e9e;
+  background-color: #d44694;
   color: white;
 }
 
@@ -184,16 +199,59 @@
 }
 
 .cart-item-details button {
-  background-color: #d23366;
-  color: white;
-  border: 2px solid white;
-  width: 170px;
-  height: 40px;
+  background-color: #0088cc;
+  color: #fff;
+  border: 2px solid #0088cc;
+  border-radius: 5px;
+  padding: 8px 16px; /* Adjusted padding for a smaller size */
+  font-size: 14px; /* Reduced font size */
+  font-weight: bold;
+  width: auto;
+  height: 40px; /* Reduced height */
   cursor: pointer;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
 }
 
 .cart-item-details button:hover {
-  background-color: #006e9e;
-  color: white;
+  background-color: #d44694;
+  color: rgb(248, 248, 248);
+  border-color: white;
 }
+/* Add this to your CSS file or component stylesheet */
+
+.notification {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #4caf50; /* Green background color */
+  color: #fff; /* White text color */
+  text-align: center;
+  padding: 15px;
+  z-index: 1000; /* Ensure it's above other elements */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.notification p {
+  margin: 0;
+}
+
+/* Add transition for a smooth appearance and disappearance effect */
+.notification-enter {
+  opacity: 0;
+}
+
+.notification-enter-active {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+.notification-exit {
+  opacity: 1;
+}
+
+.notification-exit-active {
+  opacity: 0;
+  transition: opacity 300ms;
+}
+

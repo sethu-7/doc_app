@@ -136,6 +136,11 @@ html {
 }
 
 
+/* doc_search.css */
+.link-no-underline {
+    text-decoration: none;
+}
+
 
 
 

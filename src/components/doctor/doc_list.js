@@ -6,32 +6,32 @@ const Doctors_List = ({ cart, setCart }) => {
   const initialMedicines = [
     {
       id: 1,
-      name: 'Dr. Jay D',
-      cost: "Dermatology Specialist",
+      name: 'Dermatology Specialist',
+      cost: "Dr. Jay D",
       description: 'In practice for 5 years',
       image: 'data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBIgACEQEDEQH/xAAbAAEAAgMBAQAAAAAAAAAAAAAABQYCAwQBB//EADkQAAEDAwICCAMGBgMBAAAAAAEAAgMEBRESISIxBhNBUWFxgZEyocEHFBUjQrFTYnKi0eFSgvAz/8QAGQEBAQEBAQEAAAAAAAAAAAAAAAECBAMF/8QAHhEBAQADAQEBAQEBAAAAAAAAAAECAxEhMUESMgT/2gAMAwEAAhEDEQA/APuKIiAiIgIiICIiAijb7fLdYaI1d0qWwxcmg7uee5oG5Kos/wBrdH10jKS2zP07jW7Bd7ZwnR9MRfPrV9or6up01FvDIjg8D+IehV5oqyGupmT05yx4yM806OhERAREQEREBERAREQEREBERAWMr2xxue8gNaMknsC9UX0oqPu1grZAAeDTudtyB9UHxzpPXVvSi71E87QKeB+mGNrshsZ5bnbJ2K9oLXbpmjXTmaQHBbI7bPple1UT4KOetgYJWTyudFxaRp5A+vNbujd0paiR1DLTPp6mMbMcc5XLs2ZT47NWnC/6dTrHVPYTTQNijZ2Nxy9FN9GbrWW+pbT1Ac/G+nOMjuHzWFBfbd18tJ1s5n5ECFzm+4Czl0mt0H+FlrxyGTz+RTXnbfV3a8ZjePpEL2yRtew5a4AjyKzWiha5lHA13xCNoPst66nEIiICIiAiIgIiICIiAiIg8KpH2qzugssJBOh0paW9jiQQM+5PorworpBY6W/UQpazUGB4cC07grOUtnjWFkva+YXm0QEMo3SOZHHE0RgnhLcALg6J2lv46yqwHNEXVxYbpbgDG3esvtKkq6SWeKnJDmkNjPeFXrBHcDUxFlwETnfHHqPF9AuS4W3678dmPJyLpQdF3w3qeqgqnObISSxrsFpPeDkbKVuraiC70EoAdT08fW1DQfia0nH1UbZq6tN4qopacwOiYxp3yJB2O9v2Vs/BpbjdIJ5GlsDItLj2OBOSExmU+Lnlhl9W1hy0FZLxowF6u180REQEREBERAREQEREBERAXh5IVD1N7hbXS0VMOtkgaHTvB4Ys/C3Pa488dg58xkKT9pNPTVdcGEt62Nwfz2JxuD7/ADVJtVWLbWY0BvEBknIcFZOn1pqDdYLvA9xpaxrQ/f4ZQPqB/aoi3UBdVaixpHeTkrk2ZyXju1a+49lWa0TMq65koGA4ho9yvp0TBHG1g/SML5bRyNZd6G3UvFV1EoxgfAwbuce4AA+ZIX0Suq6qmpWy01E6rIdxxseA8N7xnY+S9tN7OvD/AKJy8SQRcNrulLc4nPp3ODmHTJFI0tfG7uc07hdy9XgIiICIiAiIgIiICIiDGR7WNy44C5n1Lt9Ix5rRcZ8RygcmtJ/wsJZA2KJ45OAQcd8uRorbVVUr/wAuGJ0jgO3Ayq90TgdT2KOSo3qKtxqahx7Xu3+Ww9E6dudUUjbbGeKsnZDg9xPEfRoKm6GBgibGRs0YA8FeeJ+oyumbUMjoZOKFwcHM7zqIB9MKn3+H8Hl/LdkPGWeKvNdRsjdVaSS+Fwc097TgkfNcdV0cgv8AHTSVofIKYyCBrThr86fj7xsubZq/p1at38eOL7L7QYn1V3rzmvqGYiY7myI758M7fJfRGjACq8Jmg6URx9XpYYBGA3kcAb/IqQvl3lpKmlt1DC2atqdWnWcNY0Ddzl768OTkeGzLt7XNUz6emsDIQG6qFwnx28Q0e3F7qwh5BAK+d0LbtZOlo/Huqn/FHBkNTCSA0jcNwQvoL95QOxemUk488a3g7rJaQ7iPktrTlYaeoiICIiAiIgLTUy9W0DtccLcTgKCr6vXWkNPDGx3vgoOOrquspXuz8cuPRdFbMG0VNvyA/ZQlXJoy0fC2TKzuVWY4QdLpAxuNDebjnAAz3lQR88oq+ldEyRxxBE+XH8zuFvya73Vno+KQAdqoj56imugqK6lELpwAHRy6xGGlo34Rjdw5ZG6vtod1wjkHJ3PwPatsxjcWaqqqbj4odvQf6XbE1jKaCNuw6tuCPJctwIbdo8jI07+WQttRmGKGZozFgEgdg2Wf1thoJvcJcAdLCR4rxtsEnSSe5vlc4MhEDI8bN3y4/Re08rJb2MOB0wB2M74JO62OmfHTskAGqaXfPidvorPEvqIv8Mlf0ntYfG77nRB9RJJpOA/bA8TtnCnrdWx3BssjI5GdXIYyJG4PIHPluuzqI3bujblZMhawktzvzySVe+cTnvWnPG/yW2M7DyWh+z3eIC2tOw8lFb0XjTkL1QEREBEXhQclZUtjByexVaeQ9aXZ3I3UteyIpNjqBHsq7PL3FSjVUSaxN4hY10P3tktOXY1j27excz5cP89l2xP/ADge9mfkoKpLZLhUXv71XV73wNO0ZfrJAOdOcDb5lfQejNSG1Lqd52cNTfMD/CgZ3bAjtOF1WN5N1pg3mX49MLXUTF7qAK1z276IyV3STGFtIwsLwGhjh6YUBPMJpp5STpdLpHiNWFY5NLnxEZODn0RpWbXR08t8qLlh7JoQGBzXHdu+ARyOMlTThVyFoidC5jXhzA8FuD489sri6Osa+uuUOc4IIPfuVIwx9XKGk4GpWIytFdfpH1Iutvo2Ma7ELqaoLtTd9zkKWiqC92l8T4yO/BB9QtIA1EgkYOV7HJr2HJXiMJngS6SdyMrdE7ZRtZJiq/6hdVPLkAFB3NKzC0l7WAZ5k4C3rKiIiAue4TmmpJJgMlo29dl0LRXDNJLwh+Gk6T2oKRW1rjM98pLiTucKGqax4kPVBskX/EEh499irBWRRnDo2kgt1DtwFXbrAxrsudIx+Nw0ry9jUdtopjdntjixqccce2nzW6qi+5XE02ouETtIce3ZOhEkTbmzNTHqdwtjds47c1n0lOi+1B7pGn+0LUpUaZNUZaexy7rFK2K4Mld8MbXuPhhhUUXY1f1ldNEDJHVNDtBdCWA/1EN/YlVlvt1QHStG726g7v7cq3RkOfFPA/LHNyWHx549lTbU3qKtjWDdrtIzvup24moiY0wvxhwzjsyq1W62sFL0qlYBhtTT9YB2ZyMqQr/y6qMjkSoCG8F1+t8M+gvY7QXjnxAjHuQrBct2EOzqY7YY+a1Ga63n8onOAQvYNmjyWrXqpwfJbI9mrSNNwiY2Ns2+pxxsMrmpxOSSWkDGxCka4gUbWYy52APBRED42VOHmTbmM4x4rLSRp5JIzonGc/qUo0gtBByuRz4id9OOzK3UxaWkN5AqI3IiICxeMtI7xhZIgqNVEy3a+JznNdghw7/oq9cHxyh8gwXuJJ15V06VU5koWyNaToeC7HdgqhTgmYgc9lirHBBI6mr45XgNiicHubEd9vEqVutfHca+erh1dXLpc3UMHGkKKuFHJNA7q9gRu4FYioZJLOI9g1+Md2wWYtdOcgn+b6BZva9sEbmEg9cCD5ArTEdUR/qP7BS2iMWvmOuaDKB3t5fRekRussfWXV0hc3T1Rkx3HYKwwME1M4v0uaT6ghVnorUtFyc4bkUxD8DOOJpVqfIySBxY3DjttsqtUi/05t95jqG5DSWvafEFfQazE9MyZnwuaCD3gqr9NaYPt0U7ecThnyKmOi1UK7o9A1xy6EdUfTl8sKxK7qfemA8V0t+FaIGkNc3nxbLRd6ipji6qhaHVMhw0HGGjtJ9Fqo666QyRNjYzUCA4YO5CjZ5o2gMraaZg5NnxnHqPquxgkLxsG5GnB3DXf4Wv73IyV0M8Afgfp7Qsq3UT4ZY2RdZlzRhpO2pSkLdLMFRFNNSSytZ93dG8nYEY+qmxyUQREQEREGMjQWkEAgjBBVIv1DBT3NsUTSGySDPltsERZyWIepGGvA/TyVbqx1Ve8s21t4vQ/wC0RYVI2v8ANjYH/wAXH7KRuBLahzG/CGAen/ivEW58Rx9G5XwXGr6s44AP7lMPrqhobh/aP2XqJFrorZXVVlqWygEBmdlj9m0riK2HPA3S4Dx3CIr+otxAbI7Hdlamf/TXjiLdyiLdSOhrRnkgjY8guaCRyPcvUUV0wAbk7kLciKIIiIP/2Q==',
       added:'no',
     },
     {
       id: 2,
-      name: 'Dr. Amit Santosh',
-      cost: "Orthopedic Specialist",
+      name: 'Orthopedic Specialist',
+      cost: "Dr. Amit Santosh",
       description: 'In practice for 10 years',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTXxB2mdI24ah2QPzrq4FOETJAcScFWWA8B-R-8LN9orKNLfRzfLB6IOykAaw&s',
       added:'no',
     },
     {
       id: 3,
-      name: 'Dr. Sudha Mukharjee',
-      cost: "Dentist",
+      name: 'Dentist',
+      cost: "Dr. Sudha Mukharjee",
       description: 'In practice for 15 years',
       image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQPcHsyAWlxqpVvaDeoId5EbCX9qE_9hEtEkrUP5ajx1vY9LsLZt4X6230s7g&s',
       added:'no',
     },
     {
         id: 4,
-        name: 'Dr. Rama Sarda',
-        cost: "Pediatrician",
+        name: 'Pediatrician',
+        cost: "Dr. Rama Sarda",
         description: 'In practice for 15 years',
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1irXBs4-_JI3FGBsihNaC2x5XWw1ikdgLd2rkNwwVkABcYAbo7gU21Qjlp9XA6HxCF6E&usqp=CAU',
         added:'no',},
@@ -75,38 +75,11 @@ const Doctors_List = ({ cart, setCart }) => {
  
   return (
     <>
-      {/* <header>
-        <nav class="navbar">
-
-            <ul>
-                <li><img src="/ffsdprojectopiherb.jpg" alt="opiherb" id="logo"/>
-                </li>
-                <li></li>
-                <li></li>
-
-
-                
-                <li><a href="introduction">Introduction</a></li>
-                <li><a href="login">Login</a></li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#" data-toggle="modal" data-target="#signupModal">Sign Up</a>
-                </li>
-                <li><a href="doctor_project_final">Doctors</a></li>
-                
-                <li><Link to="/Medicines">Medicines</Link></li>
-               
-                <li><Link to="/cart">Cart</Link></li>
-                <li><a href="index">Premium</a></li>
-                <li><a href="offers">Offers</a></li>
-
-                
-            </ul>
-        </nav>
-    </header> */}
+      
       <div className="medicines-container">
         <input
           type="text"
-          placeholder="Search medicines by name"
+          placeholder="Search Doctors"
           value={searchTerm}
           onChange={handleSearch}
           className="search-input"
@@ -117,7 +90,7 @@ const Doctors_List = ({ cart, setCart }) => {
             <div key={medicine.id} className="medicine-card">
               <img src={medicine.image} alt={medicine.name} className="medicine-image" height={250} width={250}/>
               <h3>{medicine.name}</h3>
-              <p className="cost"> {medicine.cost.toFixed(2)}</p>
+              <p className="cost"> {medicine.cost}</p>
               <p className="description">{medicine.description}</p>
               {/* <button onClick={() => addToCart(medicine)}>Add to Cart</button> */}
               

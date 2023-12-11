@@ -28,7 +28,7 @@ const PaymentDashboard = () => {
       alert("Please enter a valid 3 digit CVV number.");
       return false;
     }
-    navigate('/Home');
+    navigate('/user');
 
     return true;
   };

@@ -68,7 +68,7 @@ const SignUp = () => {
       <h1 className="signup-title">Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <label className="signup-label">Username:</label>
-        <input
+        <input required
           type="text"
           className="signup-input"
           value={username}
@@ -76,7 +76,7 @@ const SignUp = () => {
         />
         <br />
         <label className="signup-label">Email:</label>
-        <input
+        <input required
           type="text"
           className="signup-input"
           value={email}
@@ -85,7 +85,7 @@ const SignUp = () => {
         {emailError && <p className="error-message">{emailError}</p>}
         <br />
         <label className="signup-label">Password:</label>
-        <input
+        <input required
           type="password"
           className="signup-input"
           value={password}
@@ -94,7 +94,7 @@ const SignUp = () => {
         {passwordError && <p className="error-message">{passwordError}</p>}
         <br />
         <label className="signup-label">Address:</label>
-        <input
+        <input required
           type="text"
           className="signup-input"
           value={address}
@@ -102,7 +102,7 @@ const SignUp = () => {
         />
         <br />
         <label className="signup-label">Specialization:</label>
-        <input
+        <input required
           type="text"
           className="signup-input"
           value={specialization}
@@ -110,7 +110,7 @@ const SignUp = () => {
         />
         <br />
         <label className="signup-label">Doctor ID:</label>
-        <input
+        <input required
           type="text"
           className="signup-input"
           value={doctorId}
