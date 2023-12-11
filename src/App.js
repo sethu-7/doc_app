@@ -14,6 +14,7 @@ import Offers from './components/offers/Offers'
 import PaymentDashboard from './components/Premium/PaymentDashboard'
 
 import Signup_user from './components/Home/Signup_user';
+import Doctors_List from './components/doctor/doc_list';
  
 import Login from './components/doctor/doc_login';
 import SignUp from './components/doctor/doc_signin';
@@ -57,6 +58,7 @@ function App() {
 
         <Routes>
           <Route path="/doctor" element={<Doctor />} />
+          <Route path="/doctor_list" element={<Doctors_List />} />
           <Route path="/premium" element={<Premium />} />
           <Route path="/aboutus" element={<AboutUs />} />
           <Route path="/contactus" element={<ContactUs />} />

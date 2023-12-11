@@ -1,7 +1,3 @@
-// Doctors_List,js
-
-
-
 import React, { useState } from 'react';
 import { Link,useNavigate } from 'react-router-dom';
 
@@ -133,4 +129,4 @@ const Doctors_List = ({ cart, setCart }) => {
   );
 };
 
-export default Doctors_List;
+export default Doctors_List;

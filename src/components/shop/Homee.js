@@ -88,7 +88,7 @@ const Homee = () => {
                     <div className='container reveal'>
                         <div className='teddy'>
 
-                            <img src="https://wwwnc.cdc.gov/travel/images/pill-bottle.jpg" width={500} />
+                            <img src="https://wwwnc.cdc.gov/travel/images/pill-bottle.jpg" width={500}  size={100}/>
 
                         </div>
                         <div className='content1'>
