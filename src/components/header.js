@@ -19,7 +19,7 @@ function Header() {
                     <li><Link to="/user">Home</Link></li>
                     <li><Link to="/doctor">Doctors</Link></li>
                     <li><Link to="/MedHome">Medicines</Link></li>
-                    <li><Link to="/fsd">First Aid/Emergency</Link></li>
+                    {/* <li><Link to="/fsd">First Aid/Emergency</Link></li> */}
                     <li><Link to="/premium">Premium</Link></li>
                     <li><Link to="/offers">Offers</Link></li>
                     <li><Link to="/SignUpUser">Login</Link></li>
