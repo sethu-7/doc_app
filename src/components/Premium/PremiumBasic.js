@@ -16,9 +16,9 @@ export default function PremiumBasic() {
     
       <div className={styles.table}>
       <div className={styles.priceSection}>
-        <div className={styles.innerArea}>
+        <div className={styles.innerArea} style={{background:'rgb(130,198,243)'}}>
           <span className={styles.text}></span>
-          <span className={styles.price}>₹999 <br /></span>
+          <span className={styles.price} >₹999 <br /></span>
         </div>
       </div>
       <div className={styles.packageName}></div>
@@ -47,7 +47,7 @@ export default function PremiumBasic() {
           <span className={`${styles.icon} ${styles.cross}`}><FontAwesomeIcon icon={faTimes} /></span>
         </li>
       </ul>
-      <div className={styles.btn}>
+      <div className={styles.btn} >
         <button style={{ color: '#82c6f3' }} onClick={clickHandler}>
           Purchase
         </button>
