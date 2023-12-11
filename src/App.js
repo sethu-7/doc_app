@@ -39,6 +39,7 @@ import store from './app/store';
 // import { useSelector } from 'react-redux';
 import { selectUser } from './features/userSlice';
 
+import ClientOffers from './components/offers/ClientOffers';
 
 
 function App() {
@@ -86,6 +87,7 @@ function App() {
             path="/cart"
             element={<Cart cart={cart} setCart={setCart} />}  // Pass setCart to Cart
           />
+          <Route path="/ClientOffers" element={<ClientOffers/>}/>
 
           {/* <Route path="/doc_profile" element={<profile />} /> */}
 
