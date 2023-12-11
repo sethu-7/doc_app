@@ -1,19 +1,25 @@
 import React from "react";
 import './doc_search.css';
+import Doctors_List from "./doc_list";
+import { Link } from "react-router-dom";
 
 function Docsearch() {
     return (
         <>
             <section class="image">
+            <Link to="/doctor_list">
                 <div class="container-image">
                     <h1 id="heading">FIND YOUR NEAREST DOCTOR NOW</h1>
                     
-
+                    
                     {/* <form action="doctor_list" style="padding-right: 650px ;"> */}
                         {/* <i class="fas fa-search" aria-hidden="true"></i>  */}
+                        
                         <input class="search" type="text" id="Spec" name="Spec"
-                            placeholder="Search for specializations or district"/>
+                            placeholder="Search for specializations or district" oncl/>
+                        
                     {/* </form> */}
+                   
 
 
 
@@ -41,7 +47,7 @@ function Docsearch() {
 
                     </div>
                 </div>
-
+                </Link>
             </section>
 
         </>
