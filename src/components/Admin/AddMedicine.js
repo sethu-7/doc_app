@@ -7,7 +7,7 @@ export default function AddMedicine(props) {
   return (
     <div className={styles.offers}>
       <h2 style={{ textAlign: 'center' }}>Add New Medicine</h2>
-      <form action="/medicines" method="POST">
+      <form action="/medicines" >
         <label htmlFor="image">Image URL:</label>
         <input className={styles.inputcolor} type="text" id="image" name="image" required />
         <label htmlFor="name">Name:</label>
