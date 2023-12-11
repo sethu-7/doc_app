@@ -3,12 +3,10 @@
 import React, { useState } from 'react';
 import './Offers.css';
 import OfferCard from './OfferCard';
-import AddOffer from '../Admin/AddOffer';
-import DeleteOffer from '../Admin/DeleteOffer';
 
-const Offers = () => {
-  const [adoffer,setAdoffer]=useState(false);
-  const [deloffer,setDeloffer]=useState(false)
+
+const ClientOffers = () => {
+ 
   const [offerData, setOfferData] = useState([
     // Initial static offers
     {
@@ -26,23 +24,9 @@ const Offers = () => {
     // Add more offers as needed
   ]);
 
-  const handleOfferAddition = (newOffer) => {
-    setOfferData((prevOfferData) => [...prevOfferData, newOffer]);
-  };
+  
 
-  const handleOfferDeletion = (titleToDelete) => {
-    setOfferData((prevOfferData) =>
-      prevOfferData.filter((offer) => offer.title !== titleToDelete)
-    );
-  };
-
-    const adofferHandler=()=>{
-    setAdoffer(true);
-  }
-
-  const delOfferHandler=()=>{
-setDeloffer(true);
-  }
+    
 
   return (
     <div>
@@ -64,20 +48,11 @@ setDeloffer(true);
           />
         ))}
       </div>
-      <div>
-      <button onClick={adofferHandler} >Add Offer</button>
-        {adoffer && <AddOffer onOfferAdd={handleOfferAddition} />}
-      </div>
-      <br />
-      <div>
-      <button onClick={delOfferHandler}>Delete Offer</button>
-      {deloffer &&  <DeleteOffer onDeleteOffer={handleOfferDeletion} />}
-      </div>
-      <br />
+      
       
       
     </div>
   );
 };
 
-export default Offers;
+export default ClientOffers;

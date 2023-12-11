@@ -7,7 +7,7 @@ function Docsearch() {
     return (
         <>
             <section class="image">
-            <Link to="/doctor_list">
+                        <Link to="/doctor_list">
                 <div class="container-image">
                     <h1 id="heading">FIND YOUR NEAREST DOCTOR NOW</h1>
                     
@@ -18,12 +18,13 @@ function Docsearch() {
                         <input class="search" type="text" id="Spec" name="Spec"
                             placeholder="Search for specializations or district" oncl/>
                         
+                </div>
+                </Link> 
                     {/* </form> */}
                    
 
 
 
-                </div>
 
                 <div class="consult">
                     <h2>Consult with the Best Doctors Around the world</h2>
@@ -47,7 +48,6 @@ function Docsearch() {
 
                     </div>
                 </div>
-                </Link>
             </section>
 
         </>

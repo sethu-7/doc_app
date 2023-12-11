@@ -7,38 +7,42 @@ import DeleteOffer from './DeleteOffer';
 import AddMedicine from './AddMedicine';
 import DeleteMedicine from './DeleteMedicine';
 import RemoveDoctor from './RemoveDoctor';
+import { Link } from 'react-router-dom';
 
 const AdminPage = () => {
-  const [offerdeletion, setOfferDeletion] = useState(false);
+  // const [offerdeletion, setOfferDeletion] = useState(false);
   const [medicinedeletion, setMedicineDeletion] = useState(false);
   const [removeDoctor, setRemoveDoctor] = useState(false);
-  const [offerAddition, setOfferAddition] = useState(false);
+  // const [offerAddition, setOfferAddition] = useState(false);
   const [medicineAddition, setMedicineAddition] = useState(false);
 
-  const offerdeletionHandler = () => {
-    // setOfferDeletion(true);
-    alert('backend is not conected')
-  };
+  // const offerdeletionHandler = () => {
+  //   // setOfferDeletion(true);
+  //   alert('backend is not connected')
+  // };
 
   const medicinedeletionHandler = () => {
     // setMedicineDeletion(true);
-    alert('backend is not conected')
+    alert('backend is not connected')
   };
 
   const doctorRemovigHandler = () => {
     // setRemoveDoctor(true);
-    alert('backend is not conected')
+    alert('backend is not connected')
   };
 
-  const offerAdditionHandler = () => {
-    // setOfferAddition(true);
-    alert('backend is not conected')
-  };
+  // const offerAdditionHandler = () => {
+  //   // setOfferAddition(true);
+  //   alert('backend is not connected')
+  // };
 
   const medicineAdditionHandler = () => {
     // setMedicineAddition(true);
-    alert('backend is not conected')
+    alert('backend is not connected')
   };
+  const navigationHandler=()=>{
+
+  }
 
   return (
     <>
@@ -71,15 +75,17 @@ const AdminPage = () => {
           {removeDoctor && <p style={{ color: 'red' }}>Doctor Removed</p>}
         </div>
 
-        <AddOffer offerAdditionHandler={offerAdditionHandler} />
+        {/* <AddOffer offerAdditionHandler={offerAdditionHandler} />
         {offerAddition && <p>Offer addition successful.</p>}
         <DeleteOffer offerdeletionHandler={offerdeletionHandler} />
 
-        {offerdeletion && <p style={{ color: 'red' }}>Offer deletion successful</p>}
+        {offerdeletion && <p style={{ color: 'red' }}>Offer deletion successful</p>} */}
         <AddMedicine medicineAdditionHandler={medicineAdditionHandler} />
         {medicineAddition && <p>Medicine addition successful.</p>}
         <DeleteMedicine medicinedeletionHandler={medicinedeletionHandler} />
         {medicinedeletion && <p style={{ color: 'red' }}>Medicine deletion successful</p>}
+
+        <button onClick={navigationHandler}><Link to={"/offers"} style={{color:'white',textDecoration:'none'}}>Offers-Admin's page</Link></button>
       </div>
     </>
   );
