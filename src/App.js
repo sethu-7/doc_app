@@ -14,11 +14,10 @@ import Offers from './components/offers/Offers'
 import PaymentDashboard from './components/Premium/PaymentDashboard'
 
 import Signup_user from './components/Home/Signup_user';
-<<<<<<< HEAD
+
 import Doctors_List from './components/doctor/doc_list';
-=======
 import User from './components/Home/user';
->>>>>>> 54e23b448467368185605b690849d83d9c382d0e
+// >>>>>>> 54e23b448467368185605b690849d83d9c382d0e
  
 import Login from './components/doctor/doc_login';
 import SignUp from './components/doctor/doc_signin';

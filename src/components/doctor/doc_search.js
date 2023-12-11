@@ -49,3 +49,54 @@ function Docsearch() {
 }
 
 export default Docsearch;
+
+// import React from "react";
+// import { useNavigate } from "react-router-dom";
+// import './doc_search.css';
+
+// function Docsearch() {
+//     const navigate = useNavigate();
+
+//     const handleKeyDown = (e) => {
+//         if (e.key === "Enter") {
+//             navigate("/doctor_list");
+//         }
+//     };
+
+//     return (
+//         <>
+//             <section className="image">
+//                 <div className="container-image">
+//                     <h1 id="heading">FIND YOUR NEAREST DOCTOR NOW</h1>
+
+//                     <input
+//                         className="search"
+//                         type="text"
+//                         id="Spec"
+//                         name="Spec"
+//                         placeholder="Search for specializations or district"
+//                         onKeyDown={handleKeyDown}
+//                     />
+//                 </div>
+
+//                 <div className="consult">
+//                     <h2>Consult with the Best Doctors Around the world</h2>
+//                     <p>Starting at ₹199</p>
+//                     <div id="flex" onScroll={() => { /* handleScroll() function implementation here */ }}>
+//                         <div className="box">
+//                             {/* Add your image */}
+//                         </div>
+
+//                         <div className="box">
+//                             <div className="boxside">Talk within 30 min</div>
+//                             <div className="boxside">First consultation entirely free!</div>
+//                             <div className="boxside">Get a valid prescription</div>
+//                         </div>
+//                     </div>
+//                 </div>
+//             </section>
+//         </>
+//     );
+// }
+
+// export default Docsearch;
