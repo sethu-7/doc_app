@@ -14,6 +14,7 @@ import Offers from './components/offers/Offers'
 import PaymentDashboard from './components/Premium/PaymentDashboard'
 
 import Signup_user from './components/Home/Signup_user';
+import User from './components/Home/user';
  
 import Login from './components/doctor/doc_login';
 import SignUp from './components/doctor/doc_signin';
@@ -56,6 +57,8 @@ function App() {
 
 
         <Routes>
+          <Route path="/" element={<User />}/>
+          <Route path="/user" element={<User />}/>
           <Route path="/doctor" element={<Doctor />} />
           <Route path="/premium" element={<Premium />} />
           <Route path="/aboutus" element={<AboutUs />} />
