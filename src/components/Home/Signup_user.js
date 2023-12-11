@@ -46,7 +46,7 @@ const Signup_user = () => {
     setEmailError('');
 
     // Redirect to /doc_profile using useNavigate
-    navigate('/Home');
+    navigate('/user');
   };
 
   return (
@@ -54,7 +54,7 @@ const Signup_user = () => {
       <h1 className="signup-title">Sign Up</h1>
       <form onSubmit={handleSubmit}>
         <label className="signup-label">Username:</label>
-        <input
+        <input required
           type="text"
           className="signup-input"
           value={username}
@@ -62,7 +62,7 @@ const Signup_user = () => {
         />
         <br />
         <label className="signup-label">Email:</label>
-        <input
+        <input required
           type="text"
           className="signup-input"
           value={email}
@@ -71,7 +71,7 @@ const Signup_user = () => {
         {emailError && <p className="error-message">{emailError}</p>}
         <br />
         <label className="signup-label">Password:</label>
-        <input
+        <input required
           type="password"
           className="signup-input"
           value={password}
@@ -80,7 +80,7 @@ const Signup_user = () => {
         {passwordError && <p className="error-message">{passwordError}</p>}
         <br />
         <label className="signup-label">Address:</label>
-        <input
+        <input required
           type="text"
           className="signup-input"
           value={address}

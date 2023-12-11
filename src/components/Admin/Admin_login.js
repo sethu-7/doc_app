@@ -29,7 +29,7 @@ const LoginPage = () => {
         {error && <div className="error-message">{error}</div>}
         <div className="form-group">
           <label htmlFor="username">Username:</label>
-          <input
+          <input 
             type="text"
             id="username"
             value={username}
