@@ -13,7 +13,8 @@ function Footer() {
                 <div>
                     <h4>Know us</h4>
                     <li><Link to="/aboutus">About Us</Link></li>
-                    <li><a href="contact">Contact</a></li>
+                    <li><Link to="/contactus">Contact Us</Link></li>
+                    {/* <li><a href="contact">Contact</a></li> */}
                     {/* <li><a href="">Business</a></li>
                     <li><a href="partnership">Partnership</a></li> */}
                     <li><Link to="/AdminLogin">Admin</Link></li>
