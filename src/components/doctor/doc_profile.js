@@ -16,7 +16,7 @@ const Profile = () => {
     return (
         <>
         <div>
-            <h1>Welcome, {userName}!</h1>
+            {/* <h1>Welcome, {userName}!</h1> */}
             {/* Other content of the profile page */}
         </div>
         <div class="content-profile-page">
