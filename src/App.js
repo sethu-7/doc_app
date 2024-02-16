@@ -16,22 +16,11 @@ import PaymentDashboard from './components/Premium/PaymentDashboard'
 import Signup_user from './components/Home/Signup_user';
 
 import Doctors_List from './components/doctor/doc_list';
-// <<<<<<< HEAD
-// // <<<<<<< HEAD
-// import User from './components/Home/user';
-// // >>>>>>> 54e23b448467368185605b690849d83d9c382d0e
-// // =======
 
-// // import User from './components/Home/user';
-
-// // >>>>>>> a923973fe17449933703782ea449230c469ca0fd
- 
-// =======
 
 import User from './components/Home/user'; 
 
 
-// >>>>>>> ae59b75aeee9a711db19f19ff4c4a31412ba5d1f
 import Login from './components/doctor/doc_login';
 import Patient from './components/Home/patient_login';
 import SignUp from './components/doctor/doc_signin';
