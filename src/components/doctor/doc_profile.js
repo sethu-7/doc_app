@@ -1,17 +1,36 @@
-// DocProfile.js or any relevant component
+import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
-import './doc_profile.css'
+import './doc_profile.css';
 
 const Profile = () => {
-    // Access the userName from the Redux state
     const userName = useSelector((state) => state.user.userName);
 
-    const patients = [
+    // Initialize state for patients
+    const [patients, setPatients] = useState([
         { id: 1, name: 'John Doe', status: 'Pending', timeslot: '10:00 AM' },
         { id: 2, name: 'Jane Smith', status: 'Confirmed', timeslot: '11:30 AM' },
         { id: 3, name: 'Bob Johnson', status: 'Pending', timeslot: '02:15 PM' },
         { id: 4, name: 'Alice Williams', status: 'Cancelled', timeslot: '03:45 PM' },
-      ];
+    ]);
+
+    const handleAccept = (id) => {
+        // Update the status to 'Confirmed'
+        const updatedPatients = patients.map(patient =>
+            patient.id === id ? { ...patient, status: 'Confirmed' } : patient
+        );
+        setPatients(updatedPatients);
+        console.log(`Accepted appointment with ID: ${id}`);
+    };
+
+    const handleDecline = (id) => {
+        // Update the status to 'Postponed'
+        const updatedPatients = patients.map(patient =>
+            patient.id === id ? { ...patient, status: 'Postponed' } : patient
+        );
+        setPatients(updatedPatients);
+        console.log(`Postponed appointment with ID: ${id}`);
+    };
+
 
     return (
         <>
@@ -46,41 +65,39 @@ const Profile = () => {
     <br>
     </br>
 
-    <div class="patients">
-            <h1>TODAY'S VISITS
-
-            </h1>
-            {/* <div class="search-container">
-                <form action="#">
-                    <input type="text" placeholder="Search.." name="search"/>
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div> */}
-            <table id="patients">
-                <tr>
-
-                    <th>Patient ID</th>
-                    <th>Time</th>
-                    <th>Patient Name</th>
-                    <th>Status</th>
-                </tr>
-                <tbody>
-          {patients.map((patient) => (
-            <tr key={patient.id}>
-              <td>{patient.id}</td>
-              <td>{patient.timeslot}</td>
-              <td>{patient.name}</td>
-              <td>{patient.status}</td>
-            </tr>
-          ))}
-        </tbody>
-                
-                
-            </table>
-
-        </div>
+    <div className="patients">
+                <h1>TODAY'S VISITS</h1>
+                <table id="patients">
+                    <thead>
+                        <tr>
+                            <th>Patient ID</th>
+                            <th>Time</th>
+                            <th>Patient Name</th>
+                            <th>Status</th>
+                            <th>Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        {patients.map((patient) => (
+                            <tr key={patient.id}>
+                                <td>{patient.id}</td>
+                                <td>{patient.timeslot}</td>
+                                <td>{patient.name}</td>
+                                <td>{patient.status}</td>
+                                <td>
+                                    <button className="accept-btn" onClick={() => handleAccept(patient.id)}>
+                                        <i className="fas fa-check"></i>
+                                    </button>
+                                    <button className="decline-btn" onClick={() => handleDecline(patient.id)}>
+                                        <i className="fas fa-times"></i>
+                                    </button>
+                                </td>
+                            </tr>
+                        ))}
+                    </tbody>
+                </table>
+            </div>
         </>
-        
     );
 };
 
